@@ -1,0 +1,152 @@
+:root {
+    --red: #ca143e;
+    --mapRed: rgba(202, 20, 62, 0.7);
+    --darkRed: #b4022b;
+    --darkMapRed: rgba(180, 2, 43, 0.8);
+    --white: #fff;
+    --black: #000;
+}
+
+body,
+html {
+    margin: 0;
+    font-size: 16px;
+    position: relative;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+@font-face {
+    font-family: RussoOne;
+    src: url(assets/fonts/RussoOne-Regular.ttf) format('truetype');
+    font-weight: normal;
+}
+
+.main-wrapper {
+    height: calc(100vh - 3.6rem);
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 3rem;
+    padding: 1.8rem 2rem;
+    background: linear-gradient(180deg, rgba(41, 64, 128, 1) 0%, rgba(44, 75, 161, 1) 99%);
+}
+
+.header-text {
+    font-family: RussoOne;
+    color: var(--white);
+    font-size: 1.4rem;
+}
+
+.header-title {
+    position: absolute;
+    left: 2rem;
+}
+
+.marker {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 0.8rem;
+    background-color: var(--mapRed);
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+
+.marker:hover {
+    background-color: var(--darkMapRed);
+}
+
+.marker-small {
+    height: 20px;
+    width: 20px;
+    margin-left: -10px;
+    margin-top: -10px;
+}
+
+.marker-medium {
+    height: 30px;
+    width: 30px;
+    margin-left: -15px;
+    margin-top: -15px;
+}
+
+.marker-large {
+    height: 40px;
+    width: 40px;
+    margin-left: -20px;
+    margin-top: -20px;
+}
+
+.marker-xlarge {
+    height: 58px;
+    width: 58px;
+    margin-left: -29px;
+    margin-top: -29px;
+}
+
+.info-box-wrapper {
+    width: 10rem;
+    z-index: 20;
+    background: white;
+    color: #202020;
+    border-radius: 1rem;
+    border: 1px solid var(--black);
+    padding: 0.5rem;
+}
+
+.info-box-heading {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+}
+
+.info-box-wrapper > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.info-box-wrapper > ul > li {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.info-box-wrapper-title {
+    font-weight: bold;
+    padding-bottom: 0.1rem;
+    font-size: 0.7rem;
+}
+
+.info-box-wrapper-flag {
+    width: 3rem;
+    height: auto;
+    margin-left: 0.5rem;
+    min-height: 33px;
+}
+
+.info-box-wrapper > ul > li:first-child {
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.info-box-wrapper-title:last-child {
+    padding-bottom: 0;
+}
