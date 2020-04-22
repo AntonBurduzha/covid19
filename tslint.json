@@ -1,7 +1,7 @@
 {
     "extends": ["tslint:latest", "tslint-eslint-rules"],
     "linterOptions": {
-        "exclude": ["node_modules/**/*.ts", "coverage/lcov-report/*.js", "./src/**/*.test.*"]
+        "exclude": ["node_modules/**/*.ts", "coverage/lcov-report/*.js", "./src/**/*.test.*", "cypress"]
     },
     "rules": {
         "arrow-parens": [true, "ban-single-arg-parens"],

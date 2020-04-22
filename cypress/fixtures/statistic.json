@@ -1,0 +1,25 @@
+[
+    {
+        "updated": 0,
+        "country": "Ukraine",
+        "countryInfo": {
+            "_id": 0,
+            "iso2": "",
+            "iso3": "",
+            "lat": 0,
+            "long": 0,
+            "flag": "none_flag"
+        },
+        "cases": 8000,
+        "todayCases": 340,
+        "deaths": 1200,
+        "todayDeaths": 15,
+        "recovered": 200,
+        "active": 2000,
+        "critical": 50,
+        "casesPerOneMillion": 400,
+        "deathsPerOneMillion": 10,
+        "tests": 10,
+        "testsPerOneMillion": 300
+    }
+]
