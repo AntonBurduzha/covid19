@@ -31,7 +31,9 @@
         "build": "react-scripts build",
         "test": "react-scripts test",
         "lint": "tslint --project '.'",
-        "e2e": "cypress open"
+        "e2e": "cypress open",
+        "ci:e2e": "cypress run --config video=false --key=449e87f1-6085-401e-9135-2b4b43ce6f48",
+        "serve": "node server.js"
     },
     "eslintConfig": {
         "extends": "react-app"
@@ -64,6 +66,7 @@
         "enzyme-adapter-react-16": "^1.15.2",
         "husky": "^4.2.5",
         "tslint": "^6.1.1",
-        "tslint-eslint-rules": "^5.4.0"
+        "tslint-eslint-rules": "^5.4.0",
+        "wait-on": "^4.0.2"
     }
 }
