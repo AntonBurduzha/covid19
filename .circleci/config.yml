@@ -27,6 +27,7 @@ workflows:
     jobs:
       - build
       - cypress/run:
+          executor: cypress/base-10
           record: true
           parallel: true
           parallelism: 10
