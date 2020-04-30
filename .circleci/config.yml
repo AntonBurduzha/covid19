@@ -21,7 +21,7 @@ jobs:
       - run: yarn lint
       - run: yarn test
       - run:
-          command: yarn start
+          command: yarn serve
           background: true
       - run: npx wait-on http://localhost:3000
       - run: yarn ci:e2e

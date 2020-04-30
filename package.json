@@ -32,7 +32,8 @@
         "test": "react-scripts test",
         "lint": "tslint --project '.'",
         "e2e": "cypress open",
-        "ci:e2e": "cypress run --config video=false --key=449e87f1-6085-401e-9135-2b4b43ce6f48"
+        "ci:e2e": "cypress run --config video=false --key=449e87f1-6085-401e-9135-2b4b43ce6f48",
+        "serve": "node server.js"
     },
     "eslintConfig": {
         "extends": "react-app"
