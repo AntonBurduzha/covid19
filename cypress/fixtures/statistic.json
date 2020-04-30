@@ -6,8 +6,8 @@
             "_id": 0,
             "iso2": "",
             "iso3": "",
-            "lat": 0,
-            "long": 0,
+            "lat": 10,
+            "long": 10,
             "flag": "none_flag"
         },
         "cases": 8000,
