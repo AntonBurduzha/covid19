@@ -23,6 +23,7 @@ jobs:
       - run:
           command: yarn start
           background: true
+      - run: npx wait-on http://localhost:3000
       - run: yarn ci:e2e
     
 workflows:
