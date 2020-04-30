@@ -20,7 +20,11 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
       - run: yarn lint
       - run: yarn test
-      - run: bin/cypress
+      - run:
+          command: yarn start
+          background: true
+      - run: $(yarn bin)/wait-on http://localhost:3000
+      - run: $(yarn bin)/cypress run --record --key=449e87f1-6085-401e-9135-2b4b43ce6f48
     
 workflows:
   version: 2
