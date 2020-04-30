@@ -18,13 +18,16 @@ jobs:
           key: yarn-packages-{{ checksum "yarn.lock" }}
           paths:
             - ~/.cache/yarn
+      # pre run tslint + unit tests 
       - run: yarn lint
       - run: yarn test
+      # build proj to serve it via simple http server
       - run: yarn build
       - run:
           command: yarn serve
           background: true
       - run: npx wait-on http://localhost:3000
+      # run cypress tests
       - run: yarn ci:e2e
     
 workflows:
