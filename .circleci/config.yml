@@ -1,4 +1,6 @@
 version: 2.1
+orbs:
+  cypress: cypress-io/cypress@1.0.0
 jobs:
   build:
     docker:
@@ -18,10 +20,13 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
       - run: yarn lint
       - run: yarn test
-      - run: yarn ci:cypress-run
       - run: yarn build
 workflows:
   version: 2
   build:
     jobs:
       - build
+      - cypress/run:
+          record: true
+          parallel: true
+          parallelism: 10

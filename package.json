@@ -31,8 +31,7 @@
         "build": "react-scripts build",
         "test": "react-scripts test",
         "lint": "tslint --project '.'",
-        "cypress:run": "cypress run --record --key=${CYPRESS_RECORD_KEY}",
-        "ci:cypress-run": "start-server-and-test start http://localhost:3000 cypress:run"
+        "e2e": "cypress open"
     },
     "eslintConfig": {
         "extends": "react-app"
