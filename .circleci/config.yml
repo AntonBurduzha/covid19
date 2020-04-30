@@ -21,7 +21,7 @@ jobs:
       - run:
           command: yarn start
           background: true
-      - run: $(yarn bin)/cypress run --record --key=449e87f1-6085-401e-9135-2b4b43ce6f48
+      - run: yarn ci:e2e
     
 workflows:
   version: 2
